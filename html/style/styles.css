@@ -8,12 +8,6 @@
 
 }
 
-body{
-    padding:100px;
-    border: 10px;
-    border-style: double;
-    border-color: aqua;
-}
 
 .header {
     display: flex;
