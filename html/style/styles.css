@@ -1,51 +1,116 @@
+:root {
+    /* Główne kolory KUKA */
+    --kuka-orange: #F57C00;
+    --industrial-black: #212121;
+    --robot-gray: #BDBDBD;
+    --steel-silver: #E0E0E0;
+
+    /* Akcenty i dopełnienia */
+    --highlight-blue: #2196F3;
+    --error-red: #D32F2F;
+    --success-green: #388E3C;
+
+    /* dopełniające */
+    --deep-teal: #00796B;
+    --cool-cyan: #00ACC1;
+    --slate-blue: #5C6BC0;
+    --warm-sand: #F5F5DC;
+    --dark-graphite: #1C1C1C;
+
+    /* Tekst */
+    --text-light: #FFFFFF;
+    --text-dark: #212121;
+}
+
 * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    border: 2px;
-    border-style: solid;
-    align-self: center;
 
+    align-self: center;
+    text-align: center;
+    background-color: var(--robot-gray);
+    color: var(--industrial-black);
 }
 
+/*_________________________  Elements */
+h1 {
+    padding: 0px 2vw 0px 2vw;
+    font-size: 5vw;
+    color: var(--kuka-orange);
+}
+
+h2 {
+    margin-top: 20px;
+    color: var(--kuka-orange);
+
+} 
+
+p {
+    padding: 5px 0px 5px 0px;
+    
+}
+
+img {
+    height: 40px
+}
+
+.header img {
+    height: 90px
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    user-select: none;
+    outline: none;
+}
+
+
+/* _________________________  Section */
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 5vw 0px 5vw;
+    margin-bottom: 15px;
+}
 
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: grey;
-
 }
 
-.content {
-    background-color: coral;
-}
-
-.footer {
-    background-color: darkgreen;
-}
-
-
-img {
-    height: 100%;
-    width: auto;
-}
-
-h1 {
-    padding: 0px 20px 0px 0px;
-}
-
-.logo {
+.apps {
+    padding: 20px 0px 20px 0px;
     display: flex;
-    border-style: solid;
-    background-color: aqua;
-    height: 100px;
-
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5vw;
 }
 
-.links ul {
-    list-style: none;
+
+.app {
+    width: 250px;
+    height: auto;
+    flex-shrink: 0;
+
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+}
+
+.app > * {
+  margin: 0px 20px 0px 20px;
+}
+
+
+.previous-app {
+
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+
     display: flex;
-   padding: 0px 20px 0px;
+    justify-content: center;
     gap: 20px;
+
 }
